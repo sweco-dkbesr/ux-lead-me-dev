@@ -1,16 +1,16 @@
 <template>
   <div class="ux-og-dig">
-    <TextBox id="ux-og-dig.html"></TextBox>
+    <LeadContentUnit id="ux-og-dig.html"></LeadContentUnit>
   </div>
 </template>
 
 <script>
-  import TextBox from '@/components/TextBox.vue'
+  import LeadContentUnit from '@/components/LeadContentUnit.vue'
 
   export default {
     name: 'Principles',
     components: {
-      TextBox
+      LeadContentUnit
     }
   }
 </script>

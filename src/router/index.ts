@@ -49,11 +49,16 @@ const routes = [
         component: () => import(/* webpackChunkName: "about" */ '../views/UXOgDig.vue')
     },
     {
-        path: '/methods',
-        name: 'Metoder',
+        path: '/proces',
+        name: 'Proces',
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
+        component: () => import(/* webpackChunkName: "about" */ '../views/Proces.vue')
+    },
+    {
+        path: '/methods',
+        name: 'Metoder',
         component: () => import(/* webpackChunkName: "about" */ '../views/methods/MethodsRoot.vue'),
         meta: {
             breadCrumb: 'Metoder'
@@ -61,7 +66,6 @@ const routes = [
         children: [
             {
                 path: '/',
-                // component: '../views/methods/TreTolvEt.vue',
                 component: () => import(/* webpackChunkName: "about" */ '../views/methods/Methods.vue'),
                 meta: {
                     breadCrumb: 'Metoder'
@@ -72,18 +76,43 @@ const routes = [
                 // component: '../views/methods/TreTolvEt.vue',
                 component: () => import(/* webpackChunkName: "about" */ '../views/methods/TreTolvEt.vue'),
                 meta: {
-                    breadCrumb: 'TreTolvEt'
+                    breadCrumb: '3-12-1'
+                }
+            },
+            {
+                path: 'design-sprint',
+                // component: '../views/methods/TreTolvEt.vue',
+                component: () => import(/* webpackChunkName: "about" */ '../views/methods/DesignSprint.vue'),
+                meta: {
+                    breadCrumb: 'Design Sprint'
                 }
             }
         ]
     },
     {
         path: '/products',
-        name: 'Products',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "about" */ '../views/Products.vue')
+        name: 'Produkter',
+        component: () => import(/* webpackChunkName: "about" */ '../views/products/ProductsRoot.vue'),
+        meta: {
+            breadCrumb: 'Produkter'
+        },
+        children: [
+            {
+                path: '/',
+                component: () => import(/* webpackChunkName: "about" */ '../views/products/Products.vue'),
+                meta: {
+                    breadCrumb: 'Products'
+                }
+            },
+            {
+                path: '/protopersonas',
+                // component: '../views/methods/TreTolvEt.vue',
+                component: () => import(/* webpackChunkName: "about" */ '../views/products/Protopersonas.vue'),
+                meta: {
+                    breadCrumb: 'Protopersonas'
+                }
+            }
+            ]
     }
 ]
 

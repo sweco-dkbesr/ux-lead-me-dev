@@ -3,3 +3,19 @@
     height: 15vw;
     object-fit: cover;
 }
+
+.lead-me-card-width {
+    max-width: 20rem;
+}
+
+
+/*.develop-conent a {*/
+/*    border-left-width: 1px !important;*/
+/*    font-size: 110% !important;*/
+/*    color: #100cce;*/
+/*    font-family: 'Book Antiqua';*/
+/*}*/
+/*.develop-content a::before {*/
+/*    content:"\e092";*/
+/*    font-family: 'Glyphicons';*/
+/*}*/

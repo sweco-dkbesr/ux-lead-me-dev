@@ -1,16 +1,16 @@
 <template>
     <div class="home">
-        <TextBox id="tre_tolv_et.html"></TextBox>
+        <LeadContentUnit id="tre_tolv_et.html"></LeadContentUnit>
     </div>
 </template>
 
 <script>
-    import TextBox from '@/components/TextBox.vue'
+    import LeadContentUnit from '@/components/LeadContentUnit.vue'
 
     export default {
         name: 'TreTolvEt',
         components: {
-            TextBox
+            LeadContentUnit
         }
     }
 </script>

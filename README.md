@@ -20,13 +20,16 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Deploy to gh pages
 
 ```
-rm -rf dist && npm run build && \
-cd dist && git init && git add . \
-&& git commit -m "Initial commit" && \
-git remote add origin git@github.com:Bloomca/equalizer.git && \
+#!/usr/bin/env bash
+rm -rf dist
+npm run build
+cd dist
+git init
+git add .
+git commit -m "Deploy to gh-pages"
+git remote add origin https://github.com/sweco-dkbesr/ux-lead-me.git
 git push --force origin master:gh-pages
 ```

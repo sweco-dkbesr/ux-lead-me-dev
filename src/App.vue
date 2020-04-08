@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 
-    <b-navbar toggleable="lg" fixed="top" class="navbar-north navbar-dark navbar-expand-lg">
+    <b-navbar toggleable="lg" fixed="top" class="navbar-north navbar-dark navbar-expand-lg shadow-lg">
 
       <div class="container-fluid" id="navbarNorthContainer">
 
@@ -25,7 +25,7 @@
 
     </b-navbar>
 
-    <section class="container">
+    <section class="container pt-3 pb-3">
       <bread-crumb></bread-crumb>
     </section>
 
