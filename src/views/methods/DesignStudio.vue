@@ -6,7 +6,7 @@
 
 <script>
 
-    import LeadContentUnit from '@/components/DesignSprint.vue'
+    import LeadContentUnit from '@/components/LeadContentUnit.vue'
 
     export default {
         name: 'Design Sprint',

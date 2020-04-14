@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Protopersonas from '../views/products/Protopersonas.vue'
 
 Vue.use(VueRouter)
 
@@ -59,7 +60,17 @@ const routes = [
     {
         path: '/methods',
         name: 'Metoder',
-        component: () => import(/* webpackChunkName: "about" */ '../views/methods/MethodsRoot.vue'),
+        component: {
+            template: `
+                <div class="user">
+                  <h2>METODER {{ $route.props }}</h2>
+                  <router-view></router-view>
+                </div>
+              `
+        },
+        props: {
+            id: 0
+        },
         meta: {
             breadCrumb: 'Metoder'
         },
@@ -69,18 +80,31 @@ const routes = [
                 component: () => import(/* webpackChunkName: "about" */ '../views/methods/Methods.vue'),
                 meta: {
                     breadCrumb: 'Metoder'
+                },
+                props: {
+                    id: 1
                 }
             },
             {
-                path: 'tte',
+                path: '/3-12-1',
                 // component: '../views/methods/TreTolvEt.vue',
                 component: () => import(/* webpackChunkName: "about" */ '../views/methods/TreTolvEt.vue'),
                 meta: {
                     breadCrumb: '3-12-1'
-                }
+                },
+                props: { path: 'methods/3-12-1' }
             },
             {
-                path: 'design-sprint',
+                path: '/design-thinking',
+                // component: '../views/methods/TreTolvEt.vue',
+                component: () => import(/* webpackChunkName: "about" */ '../views/methods/DesignThinking.vue'),
+                meta: {
+                    breadCrumb: 'Design Thinking'
+                }
+                // props: { path: 'methods/3-12-1' }
+            },
+            {
+                path: '/design-sprint',
                 // component: '../views/methods/TreTolvEt.vue',
                 component: () => import(/* webpackChunkName: "about" */ '../views/methods/DesignSprint.vue'),
                 meta: {
@@ -92,27 +116,31 @@ const routes = [
     {
         path: '/products',
         name: 'Produkter',
-        component: () => import(/* webpackChunkName: "about" */ '../views/products/ProductsRoot.vue'),
         meta: {
             breadCrumb: 'Produkter'
+        },
+        component: {
+            template: `<div><router-view></router-view></div>`
         },
         children: [
             {
                 path: '/',
-                component: () => import(/* webpackChunkName: "about" */ '../views/products/Products.vue'),
-                meta: {
-                    breadCrumb: 'Products'
-                }
+                component: () => import(/* webpackChunkName: "about" */ '../views/products/ProductsRoot.vue'),
+                // meta: {
+                //     breadCrumb: 'Produkter'
+                // }
             },
             {
-                path: '/protopersonas',
-                // component: '../views/methods/TreTolvEt.vue',
+                path: 'protopersonas',
+                name: 'Protopersonas',
+                // name: 'Protopersonas',
                 component: () => import(/* webpackChunkName: "about" */ '../views/products/Protopersonas.vue'),
                 meta: {
+                    path: 'products/protopersonas',
                     breadCrumb: 'Protopersonas'
                 }
             }
-            ]
+        ]
     }
 ]
 

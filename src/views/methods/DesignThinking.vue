@@ -1,17 +1,18 @@
 <template>
-    <div class="home 3-12-1">
-        <LeadContentUnit id="methods/3-12-1.html"></LeadContentUnit>
-<!--        ::{{$router.params}}::-->
+    <div class="home">
+        <LeadContentUnit id="methods/design-thinking.html"></LeadContentUnit>
     </div>
 </template>
 
 <script>
+
     import LeadContentUnit from '@/components/LeadContentUnit.vue'
 
     export default {
-        name: 'TreTolvEt',
+        name: 'Design Sprint',
         components: {
             LeadContentUnit
         }
     }
+
 </script>

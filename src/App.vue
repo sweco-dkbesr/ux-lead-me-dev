@@ -9,7 +9,7 @@
 
           <div class="col-lg-2">
             <header>
-              <a href="./" class="logotype logotype-white" role="banner">Sweco</a>
+              <b-link to="/" class="logotype logotype-white" role="banner">Sweco</b-link>
             </header>
           </div>
         </div>
@@ -29,7 +29,15 @@
       <bread-crumb></bread-crumb>
     </section>
 
-    <router-view/>
+      <section>
+          <h1>{{ $route.props}}</h1>
+      </section>
+
+    <router-view>
+        <router-view>
+            <router-view></router-view>
+        </router-view>
+    </router-view>
 
   </div>
 

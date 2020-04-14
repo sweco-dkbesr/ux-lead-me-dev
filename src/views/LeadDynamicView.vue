@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        <LeadContentUnit id="products/products.html"></LeadContentUnit>
+<!--        <LeadContentUnit id="products/products.html"></LeadContentUnit>-->
     </div>
 </template>
 
@@ -14,10 +14,10 @@
             LeadContentUnit
         }
     })
-    export default class Products extends Vue {
+    export default class LeadDynamicView extends Vue {
 
         public mounted() {
-            console.log('ProductsRoot created');
+            console.log('LeadDynamicView created', this.$route);
         }
     }
 </script>
