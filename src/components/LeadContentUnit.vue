@@ -30,8 +30,10 @@
             }
         }
 
+        /**
+         * Loads content from /public into the template on mount.
+         */
         public mounted() {
-            console.log("Loading content ", this.id);
             this.axios.get('./content/' + this.id)
                 .then(response => {
                     this.content = response.data;
