@@ -25,7 +25,7 @@
 
     </b-navbar>
 
-    <section class="container pt-3 pb-3">
+    <section class="container pt-3 pb-2">
       <bread-crumb></bread-crumb>
     </section>
 

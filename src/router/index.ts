@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Protopersonas from '../views/products/Protopersonas.vue'
+import LeadDynamicView from "@/views/LeadDynamicView.vue";
 
 Vue.use(VueRouter)
 
@@ -44,10 +45,14 @@ const routes = [
     {
         path: '/ux-and-you',
         name: 'UX og dig',
+        component: LeadDynamicView,
+        props: {
+            file: '../../content/ux-and-you.html'
+        },
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "about" */ '../views/UXOgDig.vue')
+        // component: () => import(/* webpackChunkName: "about" */ '../views/UXOgDig.vue')
     },
     {
         path: '/proces',
@@ -61,15 +66,7 @@ const routes = [
         path: '/methods',
         name: 'Metoder',
         component: {
-            template: `
-                <div class="user">
-                  <h2>METODER {{ $route.props }}</h2>
-                  <router-view></router-view>
-                </div>
-              `
-        },
-        props: {
-            id: 0
+            template: '<div><router-view></router-view></div>'
         },
         meta: {
             breadCrumb: 'Metoder'
@@ -80,33 +77,34 @@ const routes = [
                 component: () => import(/* webpackChunkName: "about" */ '../views/methods/Methods.vue'),
                 meta: {
                     breadCrumb: 'Metoder'
-                },
-                props: {
-                    id: 1
                 }
             },
             {
-                path: '/3-12-1',
-                // component: '../views/methods/TreTolvEt.vue',
-                component: () => import(/* webpackChunkName: "about" */ '../views/methods/TreTolvEt.vue'),
+                path: '3-12-1',
+                component: LeadDynamicView,
+                props: {
+                    file: '../../content/methods/3-12-1.html'
+                },
                 meta: {
                     breadCrumb: '3-12-1'
-                },
-                props: { path: 'methods/3-12-1' }
+                }
             },
             {
-                path: '/design-thinking',
-                // component: '../views/methods/TreTolvEt.vue',
-                component: () => import(/* webpackChunkName: "about" */ '../views/methods/DesignThinking.vue'),
+                path: 'design-thinking',
+                component: LeadDynamicView,
+                props: {
+                    file: '../../content/methods/design-thinking.html'
+                },
                 meta: {
                     breadCrumb: 'Design Thinking'
                 }
-                // props: { path: 'methods/3-12-1' }
             },
             {
-                path: '/design-sprint',
-                // component: '../views/methods/TreTolvEt.vue',
-                component: () => import(/* webpackChunkName: "about" */ '../views/methods/DesignSprint.vue'),
+                path: 'design-sprint',
+                component: LeadDynamicView,
+                props: {
+                    file: '../../content/methods/design-sprint.html'
+                },
                 meta: {
                     breadCrumb: 'Design Sprint'
                 }
@@ -120,23 +118,39 @@ const routes = [
             breadCrumb: 'Produkter'
         },
         component: {
-            template: `<div><router-view></router-view></div>`
+            template: `<div><router-view><router-view></router-view></router-view></div>`
         },
         children: [
             {
                 path: '/',
-                component: () => import(/* webpackChunkName: "about" */ '../views/products/ProductsRoot.vue'),
-                // meta: {
-                //     breadCrumb: 'Produkter'
-                // }
+                name: 'products',
+                component: LeadDynamicView,
+                props: {
+                    file: 'products/products.html'
+                },
+                meta: {
+                    breadCrumb: 'Produkter'
+                }
+            },
+            {
+                path: 'personas',
+                name: 'personas',
+                component: LeadDynamicView,
+                props: {
+                    file: '../../content/products/personas.html'
+                },
+                meta: {
+                    breadCrumb: 'Personas'
+                }
             },
             {
                 path: 'protopersonas',
                 name: 'Protopersonas',
-                // name: 'Protopersonas',
-                component: () => import(/* webpackChunkName: "about" */ '../views/products/Protopersonas.vue'),
+                component: LeadDynamicView,
+                props: {
+                    file: '../../content/products/protopersonas.html'
+                },
                 meta: {
-                    path: 'products/protopersonas',
                     breadCrumb: 'Protopersonas'
                 }
             }

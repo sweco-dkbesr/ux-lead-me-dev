@@ -8,6 +8,17 @@
     max-width: 20rem;
 }
 
+.card-body {
+    padding-left:0;
+    padding-right:0;
+    padding-bottom: 0;
+}
+
+.card-title, .card-text {
+    padding-left:1rem;
+    padding-right:1rem;
+}
+
 
 /*.develop-conent a {*/
 /*    border-left-width: 1px !important;*/
