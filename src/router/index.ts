@@ -42,17 +42,39 @@ const routes = [
         // which is lazy-loaded when the route is visited.
         component: () => import(/* webpackChunkName: "about" */ '../views/What.vue')
     },
+    // {
+    //     path: '/ux-and-you',
+    //     name: 'UX og dig',
+    //     component: LeadDynamicView,
+    //     props: {
+    //         file: '../../content/ux-and-you.html'
+    //     },
+    //     // route level code-splitting
+    //     // this generates a separate chunk (about.[hash].js) for this route
+    //     // which is lazy-loaded when the route is visited.
+    //     // component: () => import(/* webpackChunkName: "about" */ '../views/UXOgDig.vue')
+    // },
     {
-        path: '/ux-and-you',
-        name: 'UX og dig',
-        component: LeadDynamicView,
-        props: {
-            file: '../../content/ux-and-you.html'
+        path: '/methods',
+        name: 'Metoder',
+        component: {
+            template: '<div><router-view></router-view></div>'
         },
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        // component: () => import(/* webpackChunkName: "about" */ '../views/UXOgDig.vue')
+        meta: {
+            breadCrumb: 'Metoder'
+        },
+        children: [
+            {
+                path: '/',
+                component: LeadDynamicView,
+                props: {
+                    file: '../../content/methods/methods.html'
+                },
+                meta: {
+                    breadCrumb: 'Metoder'
+                }
+            },
+        ]
     },
     {
         path: '/proces',
@@ -74,7 +96,10 @@ const routes = [
         children: [
             {
                 path: '/',
-                component: () => import(/* webpackChunkName: "about" */ '../views/methods/Methods.vue'),
+                component: LeadDynamicView,
+                props: {
+                    file: '../../content/methods/methods.html'
+                },
                 meta: {
                     breadCrumb: 'Metoder'
                 }
@@ -152,6 +177,17 @@ const routes = [
                 },
                 meta: {
                     breadCrumb: 'Protopersonas'
+                }
+            },
+            {
+                path: 'user-flows',
+                name: 'User Flows',
+                component: LeadDynamicView,
+                props: {
+                    file: '../../content/products/user-flows.html'
+                },
+                meta: {
+                    breadCrumb: 'User Flows'
                 }
             }
         ]
