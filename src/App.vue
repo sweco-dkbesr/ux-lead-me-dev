@@ -29,15 +29,7 @@
       <bread-crumb></bread-crumb>
     </section>
 
-      <section>
-          <h1>{{ $route.props}}</h1>
-      </section>
-
-    <router-view>
-        <router-view>
-            <router-view></router-view>
-        </router-view>
-    </router-view>
+    <router-view></router-view>
 
   </div>
 

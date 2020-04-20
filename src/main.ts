@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 // import './registerServiceWorker'
-import router from './router'
+import {routes} from './router'
 import store from './store'
 
 import axios from 'axios';
@@ -16,9 +16,17 @@ import '@sweco/sweco-digital-platforms/dist/css/sweco-bootstrap.css';
 import '@sweco/sweco-digital-platforms/dist/js/sweco-bootstrap.js';
 
 import '../src/styles/lead-me.css';
+import VueRouter from 'vue-router';
 
 Vue.config.productionTip = false
 
+const router = new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
+  routes
+});
+
+Vue.use(VueRouter);
 Vue.use(BootstrapVue)
 Vue.use(VRuntimeTemplate);
 Vue.use(VueAxios, axios);

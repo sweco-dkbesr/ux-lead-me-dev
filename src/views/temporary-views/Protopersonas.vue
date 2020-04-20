@@ -19,7 +19,7 @@
             LeadContentUnit
         }
     })
-    export default class LeadDynamicView extends Vue {
+    export default class Personas extends Vue {
 
         @Prop({required: true})
         file!: string | '';
@@ -30,7 +30,7 @@
         }
 
         public mounted() {
-            console.log('LeadDynamicView created => ', this.file);
+            console.log('Personas created => ', this.file);
         }
 
     }

@@ -6,8 +6,6 @@
 
 <script lang="ts">
 
-    console.log('LDV');
-
     import LeadContentUnit from '@/components/LeadContentUnit.vue'
     import {Component, Vue, Prop} from "vue-property-decorator";
 
@@ -19,7 +17,7 @@
             LeadContentUnit
         }
     })
-    export default class LeadDynamicView extends Vue {
+    export default class UsabilityTesting extends Vue {
 
         @Prop({required: true})
         file!: string | '';
@@ -30,7 +28,7 @@
         }
 
         public mounted() {
-            console.log('LeadDynamicView created => ', this.file);
+            console.log('UserFlows created => ', this.file);
         }
 
     }

@@ -23,7 +23,7 @@
                 <b-card
                         title="Product Owner"
                         img-src="../img/product-owner.jpg"
-                        img-alt="Billede: Michelle Obama"
+                        img-alt="Billede: SWECO"
                         tag="article"
                         class="mb-2 shadow rounded"
                         style="max-width: 20rem;"
@@ -35,6 +35,9 @@
                         <b-button to="ux-and-you/product-owner" variant="primary">DU ER POÉR</b-button>
                     </div>
                 </b-card>
+
+                <router-link to="productowner">DUPO</router-link>
+                <router-link :to="{ path: '/ux-and-you/product-owner'}" replace>DUPO2</router-link>
 
                 <b-card
                         title="SCRUM Master"

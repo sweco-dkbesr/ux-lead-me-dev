@@ -43,12 +43,27 @@
                 </b-card>
 
                 <b-card
+                        title="HVAD ER USABILITY?"
+                        img-src="../img/usability.jpg"
+                        tag="article"
+                        class="mb-2 shadow rounded"
+                        style="max-width: 20rem;"
+                >
+                    <b-card-text><br>
+                        Hvad er usability, hvordan tester vi den og hvordan maksimeres den.
+                    </b-card-text>
+                    <div class="card-footer">
+                        <b-button to="/methods/usability-testing" variant="primary">BLIV KLOG PÅ USABILITY</b-button>
+                    </div>
+                </b-card>
+
+                <b-card
                         title="UX OG DIG"
                         img-src="../img/i_want_you.jpg"
                         img-alt="I want you"
                         img-fluid
                         tag="article"
-                        class="mb-2 shadow rounded"
+                        class="mb-2 shadow rounded greyed-out"
                         style="max-width: 20rem;"
                 >
                     <b-card-text>
@@ -56,7 +71,7 @@
                         produktion.
                     </b-card-text>
                     <div class="card-footer">
-                        <b-button href="/ux-and-you" variant="primary">LÆS MERE...</b-button>
+                        <b-button disabled to="ux-and-you" variant="primary">LÆS MERE...</b-button>
                     </div>
                 </b-card>
 
@@ -116,7 +131,7 @@
                         For at få god UX bruger vi gode metoder.
                     </b-card-text>
                     <div class="card-footer">
-                        <b-button to="/methods" variant="primary">LÆS OM METODER</b-button>
+                        <b-button to="methods" variant="primary">LÆS OM METODER</b-button>
                     </div>
                 </b-card>
 
@@ -133,7 +148,7 @@
                         Personas, protopersonas, user flows, ....
                     </b-card-text>
                     <div class="card-footer">
-                        <b-button to="/products" variant="primary">LÆS OM PRODUKTER</b-button>
+                        <b-button to="products" variant="primary" key="products">LÆS OM PRODUKTER</b-button>
                     </div>
                 </b-card>
 
