@@ -20,6 +20,14 @@ export const routes = [
         component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
     },
     {
+        path: '/from-404',
+        name: 'About',
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () => import(/* webpackChunkName: "about" */ '../views/From404.vue')
+    },
+    {
         path: '/principles',
         name: 'Principper',
         meta: {
@@ -108,6 +116,17 @@ export const routes = [
                 }
             },
             {
+                path: 'usability',
+                // component: LeadDynamicView,
+                component: () => import(/* webpackChunkName: "about" */ '../views/temporary-views/Usability.vue'),
+                props: {
+                    file: '../../../content/methods/usability.html'
+                },
+                meta: {
+                    breadCrumb: 'Usability'
+                }
+            },
+            {
                 path: 'usability-testing',
                 // component: LeadDynamicView,
                 component: () => import(/* webpackChunkName: "about" */ '../views/temporary-views/UsabilityTesting.vue'),
@@ -115,7 +134,18 @@ export const routes = [
                     file: '../../../content/methods/usability-testing.html'
                 },
                 meta: {
-                    breadCrumb: 'Usability & Usability Testing'
+                    breadCrumb: 'Usability Testing'
+                }
+            },
+            {
+                path: 'usability-interviews',
+                // component: LeadDynamicView,
+                component: () => import(/* webpackChunkName: "about" */ '../views/temporary-views/UsabilityInterviews.vue'),
+                props: {
+                    file: '../../../content/methods/usability-interviews.html'
+                },
+                meta: {
+                    breadCrumb: 'Usability Interviews'
                 }
             },
             {

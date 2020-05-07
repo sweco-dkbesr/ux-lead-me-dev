@@ -16,12 +16,13 @@ import '@sweco/sweco-digital-platforms/dist/css/sweco-bootstrap.css';
 import '@sweco/sweco-digital-platforms/dist/js/sweco-bootstrap.js';
 
 import '../src/styles/lead-me.css';
+import '../src/styles/ribbons.css';
 import VueRouter from 'vue-router';
 
 Vue.config.productionTip = false
 
 const router = new VueRouter({
-  mode: 'history',
+  // mode: 'history',
   base: process.env.BASE_URL,
   routes
 });
