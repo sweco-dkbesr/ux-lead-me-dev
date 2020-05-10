@@ -12,10 +12,10 @@
 
         <h2>Hvorfor skal vi gennemføre usability interviews?</h2>
 
-        <div class="row justify-content-md-center pt-2 pb-2">
+        <div class="row justify-content-md-center pt-2 pb-3">
             <div class="col-lg-5 mb-5 mb-lg-0">
                 <div class="well well-primary" style="text-align:center">
-                    DU ≠ DIN BRUGER
+                    <h1 class="mb-0">DU ≠ DIN BRUGER</h1>
                 </div>
             </div>
         </div>
@@ -40,7 +40,11 @@
         <ol>
             <li>Diskutér i dit SCRUM team og aftal hvad testen skal fokusere på</li>
             <li>Udvælg 3-5 brugere</li>
-            <li>Design interview</li>
+            <li>Lav et Interview Script. Hent template
+                <a target="_blank" href="https://swecogroup.sharepoint.com/sites/Gr_GISIT/Shared%20Documents/UX/UX%20Templates/Usability%20Interview%20Script%20Template.dotx">
+                    her
+                </a>.
+            </li>
             <li>Send invitation</li>
         </ol>
 
@@ -51,12 +55,14 @@
         <ol>
             <li>Udvælg den rigtige software – vi har brugt Teams, se forneden</li>
             <li>Vær i opkaldet min 5 min før testen starter</li>
-            <li>Gennemfør interviewet jvf. interview skript</li>
-            <li>Interviewet foretages 1:1: interviewer vs. testperson; medlemmer af teamet kan følge med som observatører (anbefales), men må ikke bryde ind</li>
+            <li>Gennemfør interviewet vha. interview skript</li>
+            <li>Interviewet foretages 1:1: interviewer vs. testperson;
+                medlemmer af teamet kan følge med som observatører (anbefales), men må ikke bryde ind.
+            </li>
             <li>Interviewet optages, i Teams er der indbygget en fin optagelsesfunktion</li>
 
         </ol>
-            Analyse
+        Analyse
         <ol>
             <li>Umiddelbart efter interviewet diskuteres interview i team.</li>
             <li>Optagelsen af interviewet bruges til analyse, resultatet er en kort rapport</li>
@@ -74,36 +80,38 @@
         <h3>Forberedelse</h3>
         <ol>
             <li>Det er vigtigt, at teamet aftaler ikke bare hvad der skal testes, men også hvordan.</li>
-            <li>Intervieweren skal forberede sig godt og gennemgå opgaverne gentagne gange for at kunne stille relevante spørgsmål.</li>
+            <li>Intervieweren skal forberede sig godt og gennemgå opgaverne gentagne gange for at kunne stille relevante
+                spørgsmål.
+            </li>
             <li>Sitet der skal testes skal være klargjort til testen, evt. skal indhold fjernes etc.
                 Det anbefales at stille et site til rådighed som er dedikeret user
                 testing og som facilitatoren kan nulstille, uden at andre skal indblandes.
             </li>
             <li>Invitationen til interview kan med fordel cut-and-pastes fra Interview Script Template.</li>
-            <li>Sæt et framework op i en simpel matrix, a la her:
-            <table class="table table-sm mb-0">
-                <tr>
-                    <th>#</th>
-                    <th>Løser opgave 1</th>
-                    <th>Løser opgave 2</th>
-                </tr>
-                <tr>
-                    <td>Lasse</td>
-                    <td>Ja</td>
-                    <td>Nej</td>
-                </tr>
-                <tr>
-                    <td>Christoffer</td>
-                    <td>Nej</td>
-                    <td>Ja</td>
-                </tr>
-                <tr>
-                    <td>Ole</td>
-                    <td>Nej</td>
-                    <td>Nej</td>
-                </tr>
+            <li class="mb-2">Sæt et framework op i en simpel matrix, a la her:
+                <table class="table table-sm mt-">
+                    <tr>
+                        <th>#</th>
+                        <th>Løser opgave 1</th>
+                        <th>Løser opgave 2</th>
+                    </tr>
+                    <tr>
+                        <td>Lasse</td>
+                        <td>Ja</td>
+                        <td>Nej</td>
+                    </tr>
+                    <tr>
+                        <td>Christoffer</td>
+                        <td>Nej</td>
+                        <td>Ja</td>
+                    </tr>
+                    <tr>
+                        <td>Ole</td>
+                        <td>Nej</td>
+                        <td>Nej</td>
+                    </tr>
 
-            </table>
+                </table>
             </li>
         </ol>
 
@@ -111,33 +119,72 @@
 
         <ol>
             <li>Kom i god tid.</li>
-            <li>Læs introduktionen op, prøv ikke at freestyle. (find introduktionen i templaten).</li>
+            <li>Læs introduktionen op, prøv ikke at freestyle. (find introduktionen i Interview Script Template).</li>
             <li>Læg opgaver skriftligt ind i f.eks. chatten, før du læser dem op.</li>
             <li>Giv brugeren god tid. Når brugeren bliver stille spørg, om han hun kan fortælle hvad han tænker,
                 hvis han er gået i stå, bed om refleksioner hvorfor og om der er ideer til at komme videre.
             </li>
-            <li>Brug <router-link to="#youtube-1">Boomerang, Echo og Columbo</router-link>.</li>
+            <li>Brug
+                <router-link to="#youtube-1">Boomerang, Echo og Columbo</router-link>
+                .
+            </li>
         </ol>
 
         <h3>Efter interviewet</h3>
-        <p>
-            Husk, at følge op med brugeren. <br/>
-            Sig tak og understreg hvor vigtigt det er, at hun har været med.<br/>
-            Spørg om hun vil være med igen.
-        </p>
+        <ol>
+            <li>Husk, at følge op med brugeren.</li>
+            <li>Sig tak og understreg hvor vigtigt det er, at hun har været med.</li>
+            <li>Spørg om hun vil være med igen - hvis ikke. fjerne navnet fra listen af brugerpanelet.</li>
+        </ol>
 
     </section>
 
-    <section class="container white develop-content p-4 mt-6"
-             id="youtube-1">
-
-        <h2>Boomerang, Echo og Columbo</h2>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/V-An4Jfplew?controls=0"
-                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-
+    <section class="p-4 mt-6" id="bumbum-1">
+        <b-container>
+            <b-row>
+                <b-col cols="6" class="m-1">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/V-An4Jfplew?controls=0"
+                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </b-col>
+                <b-col cols="1"></b-col>
+                <b-col cols="4" class="white m-2 p-2">
+                    <h3>Boomerang, Echo og Columbo</h3>
+                    <div>
+                        Boomerang, Echo og Columbo, er tre interviewteknikker, du med fordel kan anvende for at få
+                        det meste ud af din usability test.
+                    </div>
+                    <div>
+                        Se videoen, det tager kun 4 minutter.
+                    </div>
+                </b-col>
+            </b-row>
+        </b-container>
     </section>
 
+    <section class="container white develop-content p-4 mt-6 shadow"
+             id="methods-r-11">
+
+        <div class="row" style="padding-left:16px;">
+
+            <b-card-group deck>
+
+                <b-card
+                        title="USABILITY INTERVIEW SCRIPT"
+                        img-src="../img/usability-test-interview-script.png"
+                        tag="article"
+                        class="mb-2 shadow rounded"
+                        style="max-width: 20rem;"
+                >
+                    <b-card-text><br>
+                        Hent templaten til et usability interview script.
+                    </b-card-text>
+                    <div class="card-footer">
+                        <b-button target="_blank" href="https://swecogroup.sharepoint.com/sites/Gr_GISIT/Shared%20Documents/UX/UX%20Templates/Usability%20Interview%20Script%20Template.dotx" variant="primary">LÆS MERE OM LEAN UX</b-button>
+                    </div>
+                </b-card>
+            </b-card-group>
+        </div>
+    </section>
 
 </div>
