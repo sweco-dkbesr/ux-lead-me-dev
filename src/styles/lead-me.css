@@ -46,3 +46,11 @@
 .greyed-out {
     opacity: 0.5
 }
+
+#news-list {
+    padding-left: 5px;
+}
+
+#news-list > li {
+    list-style: none;
+}

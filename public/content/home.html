@@ -1,35 +1,37 @@
 <div>
 
-    <!--
-    <section class="container p-4">
-        <b-row fullwidth>
-            <b-col cols="8" class="white shadow">
-                888
-            </b-col>
-            <b-col cols="4" class="white shadow">
-                1111
-            </b-col>
-        </b-row>
-    </section>
-    -->
-
-    <section class="container white develop-content p-4 mt-0 shadow" id="methods-r-1">
-
-        <h1 class="pb-4">Velkommen til ux-lead.me - dit centrale infopoint omkr UX i GIS&IT.</h1>
-        <p>
-            UX-LEAD.ME samler al nødvendig information om forbedring af User Experience (UX) i vores produkter i GIS&IT.
-        </p>
-        <p>
-            UX-LEAD.ME er skabt og vedligeholdt af Kasper og Bernhard [20042020.1055]
-        </p>
-        <p>
-            Her lærer du om hvad UX er, hvorfor det er vigtigt at vi sætter brugeroplevelse i centrum af vores daglige
-            produktion, og hvordan vi kan forbedre vores produkter ved hjælp af de metoder, artefakte og services fra UX
-            værktøjskassen.
-        </p>
-        <p>
-            Brug indgangene forneden til at komme i gang.
-        </p>
+    <section id="header-with calender">
+        <b-container>
+            <b-row>
+                <b-col cols="6" class="m-1 white p-3 shadow">
+                    <h1 class="pb-4">Velkommen til ux-lead.me</h1>
+                    <p>
+                        UX-LEAD.ME samler al nødvendig information om forbedring af User Experience (UX) i vores produkter i GIS&IT.
+                    </p>
+                    <p>
+                        UX-LEAD.ME er skabt og vedligeholdt af Kasper og Bernhard [20042020.1055]
+                    </p>
+                    <p>
+                        Her lærer du om hvad UX er, hvorfor det er vigtigt at vi sætter brugeroplevelse i centrum af vores daglige
+                        produktion, og hvordan vi kan forbedre vores produkter ved hjælp af de metoder, artefakte og services fra UX
+                        værktøjskassen.
+                    </p>
+                    <p>
+                        Brug indgangene forneden til at komme i gang.
+                    </p>
+                </b-col>
+                <b-col cols="1"></b-col>
+                <b-col cols="4" class="white m-2 p-3 shadow">
+                    <h3>Nyheder | Opdateringer</h3>
+                    <div>
+                        <ul id="news-list">
+                            <li>11-05-2020 - Ny side: <b-link to="/products/personas">Personas</b-link>.</li>
+                            <li>10-05-2020 - Ny side: <b-link to="/methods/usability-interviews">Usability Interviews</b-link>.</li>
+                        </ul>
+                    </div>
+                </b-col>
+            </b-row>
+        </b-container>
     </section>
 
     <section class="container white develop-content p-4 mt-6 shadow"
@@ -115,6 +117,22 @@
                     </b-card-text>
                     <div class="card-footer">
                         <b-button to="proces" variant="primary">LÆS MERE</b-button>
+                    </div>
+                </b-card>
+
+                <b-card
+                        title="UX LOVE"
+                        img-src="../img/paragraf.png"
+                        img-fluid
+                        tag="article"
+                        style="max-width: 20rem;"
+                        class="mb-2 shadow rounded"
+                >
+                    <b-card-text>
+                        UX' 21 love<br/><br/>
+                    </b-card-text>
+                    <div class="card-footer">
+                        <b-button to="love" variant="primary">LÆS OM LOVENE</b-button>
                     </div>
                 </b-card>
 
