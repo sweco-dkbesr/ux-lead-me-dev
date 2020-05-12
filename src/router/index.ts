@@ -51,6 +51,18 @@ export const routes = [
     },
 
     {
+        path: '/how-far',
+        name: 'How Far',
+        meta: {
+            breadCrumb: 'Hvor langt er vi?'
+        },
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () => import(/* webpackChunkName: "about" */ '../views/temporary-views/HowFar.vue')
+    },
+
+    {
         path: '/ux-and-you',
         component: {
             name: 'uxandyou',

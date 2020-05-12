@@ -3,30 +3,43 @@
     <section id="header-with calender">
         <b-container>
             <b-row align-h="between">
-                <b-col cols="7" sm="12" xs="12" class="white p-3 shadow">
+                <b-col cols="8" class="white p-3 shadow">
                     <h1 class="pb-4">Velkommen til ux-lead.me</h1>
                     <p>
-                        UX-LEAD.ME samler al nødvendig information om forbedring af User Experience (UX) i vores produkter i GIS&IT.
+                        UX-LEAD.ME samler al nødvendig information om forbedring af User Experience (UX) i vores
+                        produkter i GIS&IT.
                     </p>
                     <p>
                         UX-LEAD.ME er skabt og vedligeholdt af Kasper og Bernhard.
                     </p>
                     <p>
-                        Her lærer du om hvad UX er, hvorfor det er vigtigt at vi sætter brugeroplevelse i centrum af vores daglige
-                        produktion, og hvordan vi kan forbedre vores produkter ved hjælp af de metoder, artefakte og services fra UX
+                        Her lærer du om hvad UX er, hvorfor det er vigtigt at vi sætter brugeroplevelse i centrum af
+                        vores daglige
+                        produktion, og hvordan vi kan forbedre vores produkter ved hjælp af de metoder, artefakte og
+                        services fra UX
                         værktøjskassen.
                     </p>
                     <p>
                         Brug indgangene forneden til at komme i gang.
                     </p>
                 </b-col>
-<!--                <b-col></b-col>-->
-                <b-col cols="4" sm="12" class="white p-3 shadow">
+                <b-col></b-col>
+                <b-col cols="3" class="white p-3 shadow">
                     <h3>Nyheder | Opdateringer</h3>
                     <div>
                         <ul id="news-list">
-                            <li>11-05-2020 - Ny side: <b-link to="/products/personas">Personas</b-link>.</li>
-                            <li>10-05-2020 - Ny side: <b-link to="/methods/usability-interviews">Usability Interviews</b-link>.</li>
+                            <li>12-05-2020 - Opdatering:
+                                <b-link to="/proces">Lean UX Proces</b-link>
+                                .
+                            </li>
+                            <li>11-05-2020 - Ny side:
+                                <b-link to="/products/personas">Personas</b-link>
+                                .
+                            </li>
+                            <li>10-05-2020 - Ny side:
+                                <b-link to="/methods/usability-interviews">Usability Interviews</b-link>
+                                .
+                            </li>
                         </ul>
                     </div>
                 </b-col>
@@ -42,7 +55,7 @@
             <b-card-group deck>
 
                 <b-card
-                        title="HVAD ER UX?"
+                        title="HVAD ER LEAN UX?"
                         img-src="../img/obama.jpg"
                         img-alt="Billede: Michelle Obama"
                         tag="article"
@@ -50,7 +63,7 @@
                         style="max-width: 20rem;"
                 >
                     <b-card-text><br>
-                        Lær mere om hvad UX er, og hvorfor det er vigtigt at have brugeren i centrum.
+                        Lær mere om hvad LEAN UX er, og hvorfor det er vigtigt at have brugeren i centrum.
                     </b-card-text>
                     <div class="card-footer">
                         <b-button to="what" variant="primary">LÆS MERE OM LEAN UX</b-button>
@@ -126,13 +139,13 @@
                         img-fluid
                         tag="article"
                         style="max-width: 20rem;"
-                        class="mb-2 shadow rounded"
+                        class="mb-2 shadow rounded greyed-out"
                 >
                     <b-card-text>
                         UX' 21 love<br/><br/>
                     </b-card-text>
                     <div class="card-footer">
-                        <b-button to="love" variant="primary">LÆS OM LOVENE</b-button>
+                        <b-button disabled to="love" variant="primary">LÆS OM LOVENE</b-button>
                     </div>
                 </b-card>
 
@@ -186,134 +199,53 @@
             </b-card-group>
         </div>
 
-        <!--
-        <div class="row mx-n3 mx-xs-n3 mx-sm-n5 mx-md-n7 mt-5 pb-5 pb-sm-0 gray-superlight">
+    </section>
+
+    <section class="container white develop-content p-4 mt-6"
+             id="how far-r-3">
+
+        <div class="row pl-3">
 
             <b-card-group deck>
 
                 <b-card
-                        title="METODER"
-                        img-src="../img/what.jpeg"
+                        title="HVOR LANGT ER VI?"
+                        img-src="../img/how-far.jpg"
                         img-alt="Image"
                         img-fluid
                         tag="article"
-                        style="max-width: 15rem;"
-                        class="mb-2"
+                        style="max-width: 20rem;"
+                        class="mb-2 shadow rounded"
                 >
                     <b-card-text>
-                        Lær mere om hvad UX er, og hvorfor det er vigtigt at have brugeren i centrum.
+                        Stå på skulderne af din kollega...
                     </b-card-text>
                     <div class="card-footer">
-                        <b-button href="/methods" variant="primary">LÆS MERE OM LEAN UX</b-button>
+                        <b-button to="methods" variant="primary">SE HVOR LANGT VI ER</b-button>
                     </div>
                 </b-card>
 
                 <b-card
-                        title="UX PRODUKTER"
-                        img-src="../img/what.jpeg"
+                        title="RESOURCER?"
+                        img-src="../img/download.png"
                         img-alt="Image"
                         img-fluid
                         tag="article"
-                        style="max-width: 15rem;"
-                        class="mb-2"
+                        style="max-width: 20rem;"
+                        class="mb-2 shadow rounded"
                 >
                     <b-card-text>
-                        Lær mere om hvad UX er, og hvorfor det er vigtigt at have brugeren i centrum.
+                        Hent templates etc.
                     </b-card-text>
                     <div class="card-footer">
-                        <b-button href="#" variant="primary">LÆS MERE OM LEAN UX</b-button>
+                        <b-button to="methods" variant="primary">DOWNLOAD HÉR</b-button>
                     </div>
                 </b-card>
+
+
             </b-card-group>
-        </div>
-        <div class="row mx-n3 mx-xs-n3 mx-sm-n5 mx-md-n7 mt-5 pb-5 pb-sm-0 gray-superlight">
-
-            <div class="col-12 col-md-6 col-lg-3 mt-5">
-
-                <b-card
-                        title="SPØRGSMÅL"
-                        img-src="../img/what.jpeg"
-                        img-alt="Image"
-                        img-fluid
-                        tag="article"
-                        style="max-width: 15rem;"
-                        class="mb-2"
-                >
-                    <b-card-text>
-                        Lær mere om hvad UX er, og hvorfor det er vigtigt at have brugeren i centrum.
-                    </b-card-text>
-                    <div class="card-footer">
-                        <b-button href="#" variant="primary">LÆS MERE OM LEAN UX</b-button>
-                    </div>
-                </b-card>
-
-            </div>
-
-                <div class="col-12 col-md-6 col-lg-3 mt-5">
-
-                    <b-card
-                            title="LITTERATUR"
-                            img-src="../img/what.jpeg"
-                            img-alt="Image"
-                            img-fluid
-                            tag="article"
-                            style="max-width: 15rem;"
-                            class="mb-2"
-                    >
-                        <b-card-text>
-                            Lær mere om hvad UX er, og hvorfor det er vigtigt at have brugeren i centrum.
-                        </b-card-text>
-                        <div class="card-footer">
-                            <b-button href="#" variant="primary">LÆS MERE OM LEAN UX</b-button>
-                        </div>
-                    </b-card>
-
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3 mt-5">
-
-                    <b-card
-                            title="HVOR LANGT ER VI?"
-                            img-src="../img/what.jpeg"
-                            img-alt="Image"
-                            img-fluid
-                            tag="article"
-                            style="max-width: 15rem;"
-                            class="mb-2"
-                    >
-                        <b-card-text>
-                            Lær mere om hvad UX er, og hvorfor det er vigtigt at have brugeren i centrum.
-                        </b-card-text>
-                        <div class="card-footer">
-                            <b-button href="#" variant="primary">LÆS MERE OM LEAN UX</b-button>
-                        </div>
-                    </b-card>
-
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3 mt-5">
-
-                    <b-card
-                            title="ORDBOG"
-                            img-src="../img/what.jpeg"
-                            img-alt="Image"
-                            img-fluid
-                            tag="article"
-                            style="max-width: 15rem;"
-                            class="mb-2"
-                    >
-                        <b-card-text>
-                            Lær mere om hvad UX er, og hvorfor det er vigtigt at have brugeren i centrum.
-                        </b-card-text>
-                        <div class="card-footer">
-                            <b-button href="#" variant="primary">LÆS MERE OM LEAN UX</b-button>
-                        </div>
-                    </b-card>
-
-                </div>
 
         </div>
-        -->
 
     </section>
 
