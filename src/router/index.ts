@@ -192,6 +192,17 @@ export const routes = [
                 meta: {
                     breadCrumb: 'Design Sprint'
                 }
+            },
+            {
+                path: 'heuristic-evaluation',
+                // component: LeadDynamicView,
+                component: () => import(/* webpackChunkName: "about" */ '../views/temporary-views/HeuristicEvaluation.vue'),
+                props: {
+                    file: '../../content/methods/heuristic-evaluation.html'
+                },
+                meta: {
+                    breadCrumb: 'Heuristisk evaluering'
+                }
             }
         ]
     },

@@ -17,7 +17,7 @@
             LeadContentUnit
         }
     })
-    export default class DesignSprint extends Vue {
+    export default class HeuristicEvaluation extends Vue {
 
         @Prop({required: true})
         file!: string | '';

@@ -1,7 +1,7 @@
 <template>
     <div id="app">
 
-        <div class="corner-ribbon top-right sticky sweco-purple shadow">12. MAJ</div>
+        <div class="corner-ribbon top-right sticky sweco-purple shadow">13. MAJ</div>
 
         <b-navbar toggleable="lg" fixed="top" class="navbar-north navbar-dark navbar-expand-lg shadow-lg">
 
