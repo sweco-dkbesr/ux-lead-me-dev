@@ -9,7 +9,7 @@
     "deploy": "./deploy.sh"
   },
   "dependencies": {
-    "@sweco/sweco-digital-platforms": "^5.0.27",
+    "@sweco/sweco-digital-platforms": "^5.1.2",
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.8.0",
